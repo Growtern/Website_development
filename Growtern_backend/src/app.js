@@ -42,6 +42,7 @@ app.use(
       "http://localhost:5173",
       "https://growtern.com",
       "https://www.growtern.com",
+      "https://growtern-academy-dev.netlify.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS","PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
