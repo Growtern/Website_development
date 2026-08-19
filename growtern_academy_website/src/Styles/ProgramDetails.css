@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.curriculum-section {
+  background-color: #e6f3ff;
+}
+
+.curriculum-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.curriculum-card:hover {
+  transform: translateY(-2px);
+}
+
+.curriculum-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.curriculum-body {
+  background-color: #fff;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.circle-icon {
+  margin-top: -2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .curriculum-section {
+    padding: 1rem;
+  }
+
+  .curriculum-card {
+    font-size: 0.95rem;
+  }
+
+  .curriculum-header h6 {
+    font-size: 0.95rem;
+  }
+}

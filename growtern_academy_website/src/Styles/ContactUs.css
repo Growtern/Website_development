@@ -1,0 +1,74 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+/* Background Gradient */
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+/* Wrapper Box */
+.contact-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Left Section */
+.left-section {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  animation: slideInLeft 1s ease forwards;
+}
+
+/* Right Section */
+.right-section {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: translateY(-2px);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 1.2s ease forwards;
+}

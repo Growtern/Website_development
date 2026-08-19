@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Courseflow-section {
+    width: 100%;
+    height: auto;
+    padding: 50px 25px;
+/* background-image: url("../assets/Logos/Background image.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+   
+}
+
+.Courseflow-section .Flow-heading {
+  position: relative;
+  color: #000 ;
+}
+
+.Courseflow-section .underline {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #ff7b00, #ffb347);
+  border-radius: 4px;
+}
+
+.step-card {
+    background-color: #fff;
+    border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+.step-card .learning-heading{
+    font-size: 0.9Frem;
+}
+.step-icon {
+  border-radius: 10px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.connector {
+  position: absolute;
+  top: 40px;
+  right: -45px;
+  width: 45px;
+  height: 3px;
+  background: linear-gradient(to right, #ff8c00, #ffb347);
+  border-radius: 3px;
+  z-index: 1;
+  animation: glowLine 2s infinite alternate;
+}
+
+@keyframes glowLine {
+  from {
+    box-shadow: 0 0 10px #ff8c00;
+  }
+  to {
+    box-shadow: 0 0 20px #ffb347;
+  }
+}
+
+@media screen and (max-width:768px) {
+    .step-card .learning-heading{
+    font-size: 0.9rem;
+}
+.Courseflow-section .underline {
+      bottom: -20px;
+}
+    
+}

@@ -1,0 +1,192 @@
+.course-section{
+  width: 100%;
+  padding: 50px 25px;
+  background: rgba(242, 241, 237, 0.445);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #0d0d0d;
+  text-align: center;
+  position: relative;
+}
+
+.section-title span {
+  background: linear-gradient(90deg, #ff0066, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.section-title::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  background: linear-gradient(90deg, #ff0066, #ffcc00);
+  border-radius: 50px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 2s infinite alternate;
+}
+
+@keyframes slide {
+  from { width: 80px; }
+  to { width: 200px; }
+}
+
+
+/* ===== COURSE CARD MAIN ===== */
+.course-card-new {
+  background: #ffffff1a;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0px 5px 16px rgba(0,0,0,0.10);
+  transition: 0.3s ease;
+}
+.course-card-new:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== TOP IMAGE FULL WIDTH ===== */
+.card-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== TITLE SECTION ===== */
+.card-header-new2 {
+  padding: 22px 24px 10px;
+  text-align: left;
+}
+
+.course-title-new {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.3;
+
+  background: linear-gradient(90deg, #ff8c00, #ff3d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(1.3em * 2);
+}
+
+
+
+/* ===== DETAILS SECTION (UPDATED) ===== */
+.details-box {
+  padding: 0px 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 14px;
+}
+
+.detail-icon {
+  padding: 7px;
+  border-radius: 4px;
+  background: #EAF3FF;   /* soft bg */
+  color: #0D6CFF;        /* icon color */
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-title {
+  flex: none;
+  font-weight: 600;
+  color: #777;            /* gray left text */
+  font-size: 15px;
+  width: 130px;           /* alignment equal line */
+}
+
+.detail-value {
+  font-weight: 700;
+  color: #111;            /* dark highlight */
+  font-size: 15px;
+}
+
+/* ===== FOOTER BUTTONS ===== */
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+}
+
+.brochure-btn{
+    width: 100%;
+  padding: 8px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.apply-btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* DETAILS BUTTON */
+.brochure-btn {
+  background: #ffffff;
+  border: 2px solid #2575fc;
+  color: #2575fc;
+}
+
+.brochure-btn:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* APPLY NOW BUTTON */
+.apply-btn {
+  background: linear-gradient(90deg, #fe9022, #f1b441);
+  color: #fff;
+  border: none;
+}
+
+.apply-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(37, 117, 252, 0.35);
+}
+
+@media screen and (max-width:768px) {
+  .section-title{
+    font-size: 1.9rem;
+  }
+}

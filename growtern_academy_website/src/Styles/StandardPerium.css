@@ -1,0 +1,283 @@
+/* StandardPerium.css */
+
+/* ── Section ── */
+.sp-section {
+  padding: 5rem 0;
+  background: #f8fafc;
+}
+
+/* ── Header ── */
+.sp-header {
+  margin-bottom: 3.5rem;
+}
+
+.sp-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.sp-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* ── Card Base ── */
+.sp-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.sp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* ── Premium Card ── */
+.sp-card--premium {
+  border: 2px solid #3b82f6;
+  background: #ffffff;
+  padding-top: 2.5rem;
+}
+
+.sp-card--premium:hover {
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.14);
+  border-color: #2563eb;
+}
+
+/* ── Popular Tag ── */
+.sp-popular-tag {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  border: 1px solid #bfdbfe;
+}
+
+/* ── Badge ── */
+.sp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 13px;
+  border-radius: 999px;
+  margin-bottom: 1.1rem;
+  align-self: flex-start;
+  letter-spacing: 0.04em;
+  border: 1px solid transparent;
+}
+
+.sp-badge--standard {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #e2e8f0;
+}
+
+.sp-badge--premium {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+/* ── Course Info ── */
+.sp-course-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.sp-course-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+/* ── Price ── */
+.sp-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.sp-price {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.sp-card--premium .sp-price {
+  color: #2196f3;     /*chabged color*/
+}
+
+.sp-original-price {
+  font-size: 13px;
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+/* ── Duration ── */
+.sp-duration {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sp-duration-icon {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* ── Divider ── */
+.sp-divider {
+  border: none;
+  border-top: 1px solid #f1f5f9;
+  margin: 0 0 1.25rem;
+}
+
+.sp-card--premium .sp-divider {
+  border-color: #e0ecff;
+}
+
+/* ── Features ── */
+.sp-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.sp-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #475569;
+  padding: 6px 0;
+  line-height: 1.55;
+}
+
+.sp-card--premium .sp-feature-item {
+  color: #334155;
+}
+
+.sp-check {
+  color: #10b981;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ── Job Guarantee Highlight ── */
+.sp-highlight-job {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  border: 1px solid #a7f3d0;
+}
+
+/* ── Button ── */
+.sp-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 12px;
+  font-size: 13.5px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+  background: transparent;
+  color: #0f172a;
+  letter-spacing: 0.01em;
+}
+
+.sp-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.sp-btn:active {
+  transform: scale(0.98);
+}
+
+.sp-btn--premium {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.22);
+}
+
+.sp-btn--premium:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* ── Mobile Responsive ── */
+@media (max-width: 576px) {
+  .sp-section {
+    padding: 3rem 0;
+  }
+
+  .sp-title {
+    font-size: 1.6rem;
+  }
+
+  .sp-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .sp-price {
+    font-size: 1.9rem;
+  }
+}
+
+.sp-badge--online {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.sp-badge--offline {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}

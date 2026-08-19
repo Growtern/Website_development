@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Gradient */
+.disclaimer-section {
+  background: linear-gradient(180deg, #04abff, #0b2745);
+  color: #f8f9fa;
+  padding: 50px 25px;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Container */
+.disclaimer-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  line-height: 1.7;
+}
+
+/* Headings */
+.disclaimer-card h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.disclaimer-card h3,
+.disclaimer-card h4 {
+  color: #ffb004;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Gradient Text for Title */
+.text-gradient {
+ color: #ffffff;
+}
+
+/* Paragraph Styling */
+.disclaimer-card p {
+  font-size: 1rem;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+}
+
+/* Contact Section */
+.disclaimer-card ul li {
+  color: #aad4ff;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .disclaimer-card h1 {
+    font-size: 2rem;
+  }
+  .disclaimer-card {
+    padding: 2rem;
+  }
+}

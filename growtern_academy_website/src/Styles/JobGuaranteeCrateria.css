@@ -1,0 +1,108 @@
+.job-guarantee-section {
+  background: linear-gradient(180deg, #1572b6, #0f4f85);
+  padding: 50px 25px;
+}
+
+/* Header */
+.job-title {
+  color: white;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.job-subtitle {
+  color: #dbeafe;
+  font-size: 16px;
+  
+}
+
+/* Cards grid */
+.jg-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px 30px;
+  height: 100%;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+/* Left accent line */
+.jg-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(#fd9c2d, #f93838);
+}
+
+/* Hover */
+.jg-card:hover {
+  transform: translateY(-12px);
+}
+
+/* Headings */
+.jg-card h5 {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #0f4f85;
+}
+
+/* Lists */
+.jg-card ul {
+  padding-left: 18px;
+}
+
+.jg-card li {
+  color: #1e293b;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Important Box */
+.important-box {
+  background: white;
+  padding: 40px 45px;
+  border-radius: 22px;
+  max-width: 900px;
+  margin: 80px auto 0;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  border-top: 6px solid #f93838;
+}
+
+.important-box h5 {
+  color: #f93838;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.important-box li {
+  color: #1e293b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .job-title {
+    font-size: 28px;
+  }
+
+  .job-subtitle {
+    font-size: 14px;
+  }
+
+  .jg-card {
+    padding: 24px 22px;
+  }
+
+  .important-box {
+    padding: 26px 22px;
+  }
+}

@@ -1,0 +1,42 @@
+.mentorComunity-section {
+  background: #fff;
+}
+
+.mentor-section h2 {
+  font-size: 2rem;
+  color: #1f3b5c;
+  font-weight: 700;
+}
+
+.mentor-section p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.company-logo {
+  max-height: 50px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  filter: grayscale(30%);
+}
+
+.company-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .company-logo {
+    max-height: 40px;
+  }
+
+  .mentor-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .mentor-section p {
+    font-size: 0.9rem;
+  }
+}

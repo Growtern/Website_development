@@ -1,0 +1,75 @@
+body {
+  /* background-color: #eaf3ff; */
+  font-family: "Poppins", sans-serif;
+}
+
+.program-section {
+  padding: 50px 18px;
+  background: linear-gradient(145deg, #0371b1, #4fb8ff);
+}
+
+.program-section .Academic-outline-heading {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #fcdab0;
+  position: relative;
+  display: inline-block;
+}
+
+.program-section h2::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background: rgb(255, 152, 0);    /*changed the underline color*/
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.program-subtext {
+  color: #ffffff;
+  max-width: 700px;
+  margin: 10px auto 40px;
+  font-size: 1rem;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  border: 1px solid #d8e2f8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  
+}
+
+.program-card img {
+  width: 70px;
+  margin: 0 auto 20px; /*changed the margin btn - 20px to this*/
+}
+
+.program-card h5 {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.program-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .program-card {
+    margin-bottom: 20px;
+  }
+  .program-section .Academic-outline-heading {
+    font-size: 1.8rem;
+  }
+}

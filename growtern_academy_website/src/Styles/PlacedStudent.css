@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Student-Section {
+  width: 100%;
+  padding: 50px 25px;
+  background: #058dd1;
+  overflow: hidden;
+}
+
+.PlacedStudent-heading {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Student-Section p {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+
+/* Manual scroll container */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+/* Hide scrollbar for clean look */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.student-Card {
+  flex: 0 0 auto;
+  width: 220px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 10px;
+}
+
+.student-Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.Student-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+
+  margin: 0 auto 10px;  /**top = 0 btm = 10 left & right =  auto */
+  display: block;  /*removed this margin-bottom: 10px; so that it will obey margin auto*/
+}
+
+.Name {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.Role {
+  color: black;
+  font-size: 0.8rem;
+}
+
+/* Responsive: show one card per view on mobile */
+@media (max-width: 768px) {
+  .PlacedStudent-heading {
+    font-size: 1.9rem;
+    text-align: start;
+  }
+  .Student-Section p {
+    text-align: start;
+  }
+
+  .carousel-track {
+    gap: 15px;
+  }
+
+  .student-Card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

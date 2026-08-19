@@ -1,0 +1,152 @@
+/* ---------- Wrapper ---------- */
+.curriculum-wrapper {
+  width: 100%;
+  padding: 50px 25px;
+  background:  #1095d8;
+}
+
+.curriculum-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 1px black;
+}
+
+/* ---------- Timeline Section ---------- */
+.timeline {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 35px;
+}
+
+.timeline-dot {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, #cc4e00, #ffea00);
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: -18px;
+  top: 30px;
+  width: 2px;
+  height: 100%;
+  background: #d4d4d4;
+}
+
+/* ---------- Module Card ---------- */
+.module-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ---------- Module Header ---------- */
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.module-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.module-icon {
+  font-size: 35px;
+  color: #6a5bff;
+}
+
+.module-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.module-header p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* ---------- Expand Content ---------- */
+.module-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-in-out;
+  padding-left: 15px;
+}
+
+.module-content.open {
+  max-height: 300px;
+  margin-top: 10px;
+}
+
+.module-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.module-content li {
+  font-size: 15px;
+  padding: 6px 0;
+  color: #444;
+  border-left: 3px solid #6a5bff;
+  padding-left: 10px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 600px) {
+  .curriculum-title {
+    font-size: 28px;
+  }
+
+  .timeline-item {
+    margin-left: 15px;
+  }
+
+  .module-card {
+    padding: 15px;
+  }
+
+  .module-info h3 {
+    font-size: 17px;
+  }
+
+  .module-icon {
+    font-size: 28px;
+  }
+}

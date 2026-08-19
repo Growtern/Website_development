@@ -1,0 +1,173 @@
+/* =============================== 
+   Mobile View Button SECTION
+================================ */
+
+/* .internship-mobile-bar{
+  display: none;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.internship-mobile-bar__btn{
+  backdrop-filter: blur(10px);
+}
+
+.internship-mobile-bar__icon{
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.internship-mobile-bar__apply-button{
+  background: linear-gradient(135deg,#ff7a18,#ffb347);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: all .3s ease;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  border-radius: 12px 0 0 0;
+
+  box-shadow: 0 4px 15px rgba(255,122,24,0.4);
+}
+
+.internship-mobile-bar__call-btn{
+  background: linear-gradient(135deg,#1572b6,#1e90ff);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: all .3s ease;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 12px 0 0;
+
+  box-shadow: 0 4px 15px rgba(30,144,255,0.4);
+}
+
+.internship-mobile-bar__btn:hover{
+  transform: translateY(-3px);
+}
+
+.internship-mobile-bar__btn:hover .internship-mobile-bar__icon{
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.internship-mobile-bar__apply-btn{
+  animation: floatBtn 3s ease-in-out infinite;
+}
+
+@keyframes floatBtn {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+
+@media (max-width:768px){
+
+  .internship-mobile-bar{
+    display:flex;
+  }
+
+  .internship-section{
+    padding-bottom:70px;
+  }
+
+} */
+
+
+
+.internship-mobile-bar {
+  /* position: fixed; */
+  /* bottom: 0;
+  left: 0; */
+  /* width: 100%; */
+  display: none;
+  /* z-index: 9999; */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* buttons */
+.internship-mobile-bar__btn {
+
+}
+
+/* icons */
+.internship-mobile-bar__icon {
+  font-size: 16px;
+}
+
+/* apply button */
+.internship-mobile-bar__apply-button {
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+}
+
+/* call button */
+.internship-mobile-bar__call-btn {
+  background: linear-gradient(135deg, #1572b6, #1e90ff);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+}
+
+/* hover */
+.internship-mobile-bar__btn:hover {
+  transform: scale(1.03);
+}
+
+/* pulse animation */
+.internship-mobile-bar__apply-btn {
+  animation: internshipBtnPulse 2.5s infinite;
+}
+
+/* mobile only */
+@media (max-width: 768px) {
+  .internship-mobile-bar {
+    display: flex;
+  }
+
+  .internship-section {
+    padding-bottom: 70px;
+  }
+}

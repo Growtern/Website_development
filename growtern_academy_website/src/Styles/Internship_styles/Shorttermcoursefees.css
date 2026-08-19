@@ -1,0 +1,390 @@
+/* SECTION */
+
+/* ===============================
+   BOOK YOUR SEAT BUTTON
+================================ */
+
+.book-seat-btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 14px;
+  width: 100%;
+  padding: 8px;
+  background-color: #22c55e;
+}
+
+/* click */
+.book-seat-btn:active {
+  transform: scale(0.96);
+}
+
+/* ===============================
+   BOOK A SEAT BUTTON (PRIMARY)
+================================ */
+
+.btn-book-seat {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 12px;
+
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-book-seat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(34, 197, 94, 0.5);
+}
+
+.btn-book-seat:active {
+  transform: scale(0.96);
+}
+
+/* shimmer effect */
+.btn-book-seat::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+.btn-book-seat:hover::after {
+  left: 120%;
+}
+
+.fees-ui-section {
+  background: #037dbb;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 25px;
+}
+
+/* MODERN EYEBROW BADGE */
+
+.fees-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 7px 18px;
+  border-radius: 40px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(8px);
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.3s ease;
+}
+
+/* hover lift */
+.fees-eyebrow:hover {
+  transform: translateY(-2px);
+}
+
+/* shine animation */
+
+.fees-eyebrow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+
+  width: 40%;
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+  animation: badgeShine 4s infinite;
+}
+
+@keyframes badgeShine {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+/* LIVE DOT */
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fb923c;
+
+  position: relative;
+}
+
+/* glowing pulse */
+
+.live-dot::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+
+  border-radius: 50%;
+
+  background: rgba(251, 146, 60, 0.4);
+
+  animation: livePulse 1.6s infinite;
+}
+
+@keyframes livePulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/* HEADING */
+
+.fees-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.accent {
+  color: #fb923c;
+}
+
+.fees-desc {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 420px;
+}
+
+/* FEATURE LIST */
+
+.feat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feat-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.feat-icon {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feat-icon i {
+  color: #fff;
+}
+
+.feat-icon.orange {
+  background: rgba(251, 146, 60, 0.25);
+}
+
+.feat-icon.orange i {
+  color: #fb923c;
+}
+
+/* GLASS CARD */
+
+.price-glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 22px;
+  padding: 34px 28px;
+  box-shadow: 0 24px 64px rgba(0, 50, 110, 0.3);
+}
+
+/* CARD HEADER */
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.savings-tag {
+  background: rgba(251, 146, 60, 0.25);
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 11px;
+}
+
+/* PRICE */
+
+.old-price {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.new-price {
+  font-size: 54px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.price-tax-note {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
+.card-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* CLOSING INFO */
+
+.closing-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.closing-icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #fb923c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closing-copy p {
+  margin: 0;
+  font-size: 10px;
+  color: #fff;
+}
+
+.closing-copy strong {
+  color: #fde68a;
+}
+
+/* BUTTONS */
+
+.btn-enroll-glow {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #fb923c, #f97316);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.btn-callback-outline {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  background: transparent;
+  color: #fff;
+}
+
+/* CERT NOTE */
+
+.cert-note {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .fees-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .fees-desktop-content {
+    display: none;
+  }
+
+  .fees-heading {
+    font-size: 30px;
+  }
+
+  .new-price {
+    font-size: 40px;
+  }
+  .book-seat-btn {
+    padding: 8px;
+  }
+}

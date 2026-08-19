@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Footer-Section {
+  width: 100%;
+  padding: 50px 25px;
+  background-color: #1e4c78;
+}
+
+.Footer-Section .QR-Code {
+  width: 15%;
+}
+
+.Footer-Section .QR-heading {
+  color: white;
+  font-weight: 600;
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+.Footer-Section .Footer-iconSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.Footer-Section .iconDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.Footer-Section .iconDiv .icon {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.Footer-Section .FollowUs {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.Footer-Section .Sub-heading {
+  color: #ffae39;
+  font-weight: 600;
+}
+
+.Footer-Section .F-content {
+  color: white;
+  font-size: 0.8rem;  /*changed this form 0.9rem to 0.8rem*/
+  margin-top: 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Footer-Section .Logo {
+  width: 35%;  /*changed from 30 to 20*/
+}
+
+.Footer-Section .logo-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #19a6ed;
+}
+
+.Footer-Section .loge-msg {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #f39001;
+}
+.Copyright {
+  width: 100%;
+  padding: 5px;
+  background: linear-gradient(to left, #121212, #04abff, #121212);
+}
+.Copyright .copyright-message {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer-Section .Footer-iconSec {
+    margin-top: 30px;
+    align-items: center;
+  }
+  .Footer-Section .FollowUs {
+    text-align: center;
+  }
+}

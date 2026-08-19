@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.From-section {
+  width: 100%;
+}
+
+.From-section .form-body {
+  border-left: 10px solid #ff5e2e;
+  border-right: 10px solid #ff5e2e;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 0 20px rgba(145, 181, 220, 0.861);
+}
+
+.From-section .form-heading {
+  /* background: linear-gradient(to right, #F39001, #e85186, #2004f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  color: #f39001;
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control,
+.form-select {
+  background-color: transparent;
+  border: 1px solid #1f2f46;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.form-control::placeholder {
+  color: #575656;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.From-section .BookNow-Btn {
+  background: #e85186;
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 600;
+}
+
+.From-section .BookNow-Btn:active {
+  background: #a42954;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #f39001;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.From-section .Subimt-Btn {
+  width: 30%;
+  background-color: #f39001;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.From-section .Subimt-Btn:hover {
+  background-color: #b66c04;
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .From-section .form-body {
+    padding: 15px;
+  }
+}

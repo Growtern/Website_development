@@ -1,0 +1,767 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Courses-Section {
+    width: 100%;
+    padding: 50px 25px;
+    /* background: #0e1424; */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#particleCanvas {
+    background: #033955;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/*  */
+.Courses-Section .Indias-Best {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #61f299;
+    word-spacing: 4px;
+    position: relative;
+    z-index: 1;
+    margin-left: 18px;
+}
+
+.Courses-Section .Indias-Best::before,
+.Indias-Best::after {
+    content: "";
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    transform: translateX(-50%) translateY(-50%) rotate(0);
+    animation: spin 6s alternate infinite ease-in-out;
+
+}
+
+.Courses-Section .Indias-Best::before {
+    border-top: 5px solid #ff7c09;
+    border-left: 5px solid #ff7c09;
+    z-index: -1;
+}
+
+.Courses-Section .Indias-Best::after {
+    border-right: 5px solid #ff7c09;
+    border-bottom: 5px solid #ff7c09;
+    z-index: -1;
+}
+
+@keyframes spin {
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+.Courses-Section .Main-Heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+.Courses-Section .Hi-lite {
+    width: 35%;
+    /* background-color: #ff7c09; */
+    background: linear-gradient(120deg, #6366f1, #06b6d4, #f43f5e, #f59e0b);
+    clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+    padding: 10px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Courses-Section .Certificate-Div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.Courses-Section .Logo-img {
+    width: 17%;
+
+}
+
+.Courses-Section .certificate-Div2 {
+    width: 45%;
+    background: #ffffff9f;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.Courses-Section .Wcu-image {
+    width: 85%;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 5px 8px 20px rgba(255, 255, 255, 0.532);
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+}
+
+.animated-btn:hover::before {
+    left: 100%;
+}
+
+.animated-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*  */
+
+
+
+/* Features section animation */
+.feature-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Desktop auto-scroll (marquee effect) */
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: smoothScroll 15s linear infinite;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Feature cards */
+.Coursepage-feature-card {
+  width: 230px;
+  border-radius: 16px;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.9s ease;
+}
+
+.Coursepage-feature-card .LT-heroKey-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Coursepage-feature-card .feature-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.Coursepage-feature-card .feature-message {
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+/* MOBILE AUTO-SLIDE STYLE */
+@media (max-width: 768px) {
+  .feature-marquee {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .marquee-track {
+    animation: none;
+    display: flex;
+    width: 100%;
+    gap: 0px;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .Coursepage-feature-card {
+    min-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+
+/* Key Features section here */
+.Key-Features {
+    width: 100%;
+    padding: 50px 25px;
+    background: hsl(0, 0%, 100%);
+}
+
+.Key-Features .KeyFeatures-H {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: hsl(200, 84%, 41%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Key-Features .keyCard {
+    width: 100%;
+    padding: 10px;
+    background: hsla(200, 84%, 41%, 0.18);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.Key-Features .keyCard:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Key-Features .keyCard .Key-icon {
+    font-size: 3rem;
+    text-align: center;
+    animation: pop 1.5s infinite;
+    margin-top: 10px;
+}
+
+@keyframes pop {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.Key-Features .keyCard .Card-message {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Job leading courese section start here */
+.Jonleading-Courses {
+    width: 100%;
+    padding: 50px 25px;
+    background: #08608b;
+}
+
+.Jonleading-Courses .Jobleading-heading {
+    position: relative;
+    color: rgb(255, 255, 255);    
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* .Jobleading-heading::after {      removed this cuz the 3 dots are not needed
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #eeff00;
+  border-radius: 50%;
+  box-shadow: -30px 0 #eeff00, 30px 0 #eeff00;
+} */
+
+.Jonleading-Courses .card-Div {
+    --color: #000000;
+    /* --border-size: 2rem; */
+    --bg-color: #ffff;
+    /* display: grid; */
+    /* isolation: isolate; */
+    width: 100%;
+    border-radius: 2px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    background: rgb(237, 191, 5);
+    position: relative;
+    overflow: hidden;
+}
+
+.Jonleading-Courses .card-Div::before,
+.card-Div::after {
+    content: "";
+    position: absolute;
+}
+
+.Jonleading-Courses .card-Div::before {
+    width: 200%;
+    height: 200%;
+    background-image: conic-gradient(var(--color)0deg,
+            transparent 60deg,
+            transparent 180deg,
+            var(--color)180deg,
+            transparent 240deg);
+    inset: -50%;
+    z-index: -2;
+    animation: border 4s linear infinite;
+}
+
+.Jonleading-Courses .card-Div .Img-Div {
+    width: 100%;
+    height: 220px;
+    /* background: black; */
+    background-image: url(../assets/Images/Ai_black_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Jonleading-Courses .card-Div .Card-Img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.Tag-Div {
+    background: linear-gradient(270deg, #00DBDE, #FC00FF, #00DBDE);
+    background-size: 400% 400%;
+    animation: auroraMove 6s ease infinite;
+    width: 75%;
+    padding: 3px 10px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    display: flex;
+    justify-content: left;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: absolute;
+    z-index: 2;
+}
+
+@keyframes auroraMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Tag-Div .Tag-msg {
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.Online-Tag {
+    background: #F39001;
+    width: 25%;
+    position: absolute;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.Jonleading-Courses .card-Div .card-Innerheading {
+    width: 100%;
+    min-height: 2em;  /* replaced height: 60px to this; */
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #42e695);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.Jonleading-Courses .card-Div .card-Innerheading .Exten-heading {
+    background: #e62c9b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+}
+
+.Jonleading-Courses .Admission-Details {
+    display: flex;
+    width: 100%;
+    /* background: linear-gradient(to right, rgba(9, 32, 233, 0.765), rgba(157, 32, 7, 0.664)); */
+    background: rgba(217, 215, 215, 0.473);
+    padding: 9px;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+/* Inner content */
+.Jonleading-Courses .Admission-Details .Div-1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    /* above the shine */
+}
+
+.Jonleading-Courses .Admission-Details .Div-2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    /* above the shine */
+}
+
+.Jonleading-Courses .Admission-Details .Div-1 .remander,
+.Jonleading-Courses .Admission-Details .Div-2 .remander {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.Jonleading-Courses .Admission-Details .Div-1 .remander-etxt,
+.Jonleading-Courses .Admission-Details .Div-2 .remander-etxt {
+    font-size: 0.7rem;
+    color: #000000;
+    margin-top: 4px;
+}
+
+/* Ai Highlight section */
+.AiDevelop {
+    width: 95%;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* AI Development Div section */
+.AiDevelop {
+    width: 95%;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgb(253, 0, 42);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/*  Continuous running gradient highlight */
+.AiDevelop::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(90deg, transparent, rgba(248, 180, 248, 0.7), transparent);
+    animation: lightMove 3s linear infinite;
+}
+
+@keyframes lightMove {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Subtle glowing border pulse for extra effect */
+.AiDevelop {
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 8px rgba(4, 171, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 18px rgba(4, 171, 255, 0.6);
+        border-color: rgba(4, 171, 255, 0.5);
+    }
+}
+
+
+.price-Div {
+    color: #19A6ED;
+}
+
+.price-Div .Bookseat {
+    color: #6956e7;
+    font-weight: 600;
+    animation: blink-fade 1s infinite;
+}
+
+@keyframes blink-fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blink {
+        animation: none;
+        opacity: 1;
+    }
+}
+
+.Jonleading-Courses .card-Div span {
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.Jonleading-Courses .card-Div i {
+    color: #095276;
+    font-size: 20px;
+}
+
+
+
+.Jonleading-Courses .card-Div .Apply-Btn {
+    border: none;
+    width: 45%;
+    border-radius: 5px;
+    color: white;
+    background: #F39001;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+.Jonleading-Courses .card-Div .View-Btn {
+    border: none;
+    width: 45%;
+    border-radius: 5px;
+    background: #037BB9;
+    color: white;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+/* course Cards Designing Start */
+
+.WCU-Section {
+    width: 100%;
+    padding: 50px 25px;
+    background-color: #ffffff;
+}
+
+.WhyChooseUs {
+    background: #6ccbfb7b;
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: 0 0 20px rgba(10, 109, 185, 0.811);
+}
+
+.WCU-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.WCU-heading::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #03347e, #feb47b);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.Wcu-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Wcu-list li {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: rgba(5, 31, 53, 0.16);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Wcu-list li i {
+    color: #F39001;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.Wcu-list li:hover {
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.884);
+    border-color: rgba(31, 29, 29, 0.2);
+}
+
+.Wcu-list li:hover i {
+    transform: rotate(10deg);
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width:768px) {
+    .Courses-Section .Main-Heading {
+        font-size: 1.9rem;
+
+    }
+
+    .Courses-Section .Hi-lite {
+        width: 60%;
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    .Courses-Section .Certificate-Div {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .Courses-Section .certificate-Div2 {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .Key-Features .KeyFeatures-H {
+        font-size: 1.9rem;
+    }
+/* Job Leading section */
+    .Jonleading-Courses .Jobleading-heading {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+.Jonleading-Courses .card-Div .Img-Div {
+
+    height: 180px;
+}
+    .Tag-Div {
+        width: 90%;
+    }
+
+}

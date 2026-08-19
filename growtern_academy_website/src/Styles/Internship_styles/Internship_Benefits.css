@@ -1,0 +1,87 @@
+.quick-feature-section {
+  width: 100%;
+  padding: 60px 25px;
+  background: #f9fafb;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.quick-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.quick-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #ff9800;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* CARD DESIGN */
+.quick-card {
+  height: 220px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 35px 25px;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(212, 107, 107, 0.301);
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON STYLING */
+.quick-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: 0.4s ease;
+}
+
+.quick-card:hover .quick-icon {
+  transform: rotate(10deg) scale(1.15);
+}
+
+.icon {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+/* TEXT */
+.quick-card h5 {
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.quick-desc {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quick-title {
+    font-size: 1.8rem;
+  }
+
+  .quick-card {
+    padding: 25px 15px;
+  }
+}

@@ -1,0 +1,795 @@
+/* Workshop Page Styles */
+:root {
+  --primary-color: #04ABFF;
+  --secondary-color: #0396E6;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --bg-light: #F8F9FA;
+  --white: #FFFFFF;
+  --shadow: 0 4px 15px rgba(4, 171, 255, 0.1);
+  --shadow-hover: 0 8px 25px rgba(4, 171, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+
+}
+/* HERO SECTION */
+.workshop-page {
+  color: var(--text-dark);
+  overflow-x: hidden;
+  margin-top: -20px !important;
+}
+
+.workshop-hero {
+  padding: 120px 25px;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.655), rgba(0, 0, 0, 0.724)), url("../assets/Images/WorkShop/Workshop-training-imag.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  max-width: 750px;
+  margin: auto;
+  animation: fadeSlideDown 1s ease;
+}
+
+.Workshop-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Certificate Section */
+.certificate-section {
+  padding: 50px 25px;
+  background: linear-gradient(to bottom,  rgb(4, 93, 126), #04ABFF);
+}
+.certificate-section .Certificate-section-heading{
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.certificate-image {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.certificate-image img {
+  width: 90%;
+  border-radius: 5px;
+  height: auto;
+  display: block;
+}
+
+.certificate-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--bg-light);
+  margin-bottom: 15px;
+}
+
+/* Benefits Section */
+.Workahop-benefits-section {
+  padding: 50px 25px;
+ background-color: white;
+}
+.Workshop-Benefits-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+  line-height: 1.50;
+}
+
+
+.Workahop-benefits-section .benefit-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.Workahop-benefits-section .benefit-item:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow);
+}
+
+.Workahop-benefits-section .benefit-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.Workahop-benefits-section .benefit-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.Workahop-benefits-section .benefit-content p {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Workshops Section */
+.workshops-section {
+  padding: 50px 25px;
+   background: linear-gradient(to top, #04ABFF ,  rgb(5, 122, 165))
+}
+
+.Workshop-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--white);
+ 
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* =============================
+   WORKSHOP CARD – MODERN UI
+============================= */
+
+.workshop-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.14);
+}
+
+/* =============================
+   LIVE TAG
+============================= */
+.live-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(135deg, #ff3b3b, #ff6a6a);
+  color: #ffffff;
+  padding: 5px 20px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 10;
+  box-shadow: 0 6px 18px rgba(255, 59, 59, 0.45);
+}
+
+/* =============================
+   IMAGE
+============================= */
+.workshop-image {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}
+
+.workshop-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.workshop-card:hover .workshop-image img {
+  transform: scale(1.08);
+}
+
+/* =============================
+   CONTENT
+============================= */
+.workshop-content {
+  position: relative;
+  padding: 26px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =============================
+   PRICE TAG
+============================= */
+.price-tag {
+  position: absolute;
+  top: -30px;
+  right: 14px;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff8400;
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 800;
+  border-radius: 50%;
+
+  box-shadow:
+    0 12px 30px rgba(255,132,0,0.4),
+    inset 0 2px 4px rgba(255,255,255,0.35);
+
+  animation: pricePulse 3s ease-in-out infinite;
+}
+
+@keyframes pricePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+
+.workshop-card:hover .price-tag {
+  animation-play-state: paused;
+  transform: scale(1.1);
+}
+
+/* =============================
+   TITLE
+============================= */
+.course-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.35;
+}
+
+/* =============================
+   DETAILS
+============================= */
+
+
+.detail-item i {
+  
+  font-size: 20px;
+  color: #ff8400;
+  
+}
+
+/* =============================
+   DESCRIPTION
+============================= */
+.workshop-info {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+/* =============================
+   PAYMENT BUTTON ALIGNMENT
+============================= */
+.workshop-content > div:last-child {
+  margin-top: auto;
+}
+
+/* Disabled workshop card */
+.workshop-disabled {
+  opacity: 0.45;
+  filter: grayscale(90%);
+  pointer-events: none;
+}
+
+/* Price tag disabled */
+.workshop-disabled .price-tag {
+  background: #9ca3af;
+  animation: none;
+}
+
+/* Hide live tag on disabled cards */
+.workshop-disabled .live-tag {
+  display: none;
+}
+
+/* Coming soon button */
+.workshop-disabled button {
+  background: #9ca3af !important;
+  border: none;
+  cursor: not-allowed;
+}
+
+
+
+
+/* =============================
+   MENTOR SECTION – CONFLICT FREE
+============================= */
+.mentorX-section {
+  padding: 50px 25px;
+  background: linear-gradient(180deg, #f9fafb, #ffffff);
+}
+
+.mentorX-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.mentorX-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.mentorX-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px 20px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.mentorX-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.mentorX-img-wrap {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #01c6fc, #01c6fc);
+}
+
+.mentorX-img-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
+}
+
+.mentorX-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 10px;
+}
+
+.mentorX-role {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.mentorX-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.mentorX-info span {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .workshop-hero {
+    background-attachment: scroll;
+  }
+
+  .mentorX-title {
+    font-size: 26px;
+  }
+}
+
+
+/* Below Offer Section */
+.jobGlow-section {
+  padding: 35px 25px;
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.jobGlow-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+  padding: 28px 32px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(187, 247, 208, 0.5);
+  animation: boxFloat 6s ease-in-out infinite;
+}
+
+/* Decorative element */
+.jobGlow-decoration {
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(74, 222, 128, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulse 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.jobGlow-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.jobGlow-text {
+  max-width: 75%;
+}
+
+.jobGlow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #01c6fc, #01c6fc);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 15px #01c6fc6f;
+  animation: badgePulse 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Badge shimmer effect */
+.jobGlow-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px #01c6fc77;
+  }
+  50% {
+    box-shadow: 0 4px 25px #01c6fc6c;
+  }
+}
+
+.jobGlow-badge-icon {
+  font-size: 14px;
+  animation: rotate 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.jobGlow-text p {
+  font-size: 14.5px;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.jobGlow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #ff8800, #ff6b00);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(255, 136, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button shimmer effect */
+.jobGlow-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.jobGlow-btn:hover::before {
+  left: 100%;
+}
+
+.jobGlow-btn:hover {
+  background: linear-gradient(135deg, #ff6b00, #e65100);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(255, 136, 0, 0.4);
+  color: #ffffff;
+}
+
+.jobGlow-btn-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.jobGlow-btn:hover .jobGlow-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .jobGlow-section {
+    padding: 25px 15px;
+  }
+  
+  .jobGlow-box {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  
+  .jobGlow-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .jobGlow-text {
+    max-width: 100%;
+  }
+  
+  .jobGlow-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .jobGlow-decoration {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* =============================
+   MOBILE RESPONSIVE
+============================= */
+@media (max-width: 576px) {
+  .workshop-details {
+    grid-template-columns: 1fr;
+  }
+
+  .price-tag {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    top: -30px;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .Workshop-hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+  .certificate-image{
+    justify-content: center;
+  }
+
+  .workshops-section,
+  .certificate-section,
+  .importance-section,
+  .benefits-section,
+  .gallery-section {
+    padding: 40px 20px;
+  }
+  .certificate-section .Certificate-section-heading{
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .benefit-item {
+    margin-bottom: 20px;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+  .workshop-hero{
+    padding: 90px 25px 50px 25px;
+    background-position: bottom;
+  }
+  .Workshop-title{
+    font-size: 1.8rem;
+  }
+  .Workshop-Benefits-title{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 35px 15px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .workshops-section,
+  .certificate-section,
+  .importance-section,
+  .benefits-section,
+  .gallery-section {
+    padding: 35px 15px;
+  }
+
+  .course-name {
+    font-size: 18px;
+  }
+
+  .benefit-number {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .benefit-content h4 {
+    font-size: 18px;
+  }
+}
+
+
+

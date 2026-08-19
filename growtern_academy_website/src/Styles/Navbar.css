@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.Included-Navbar {
+  text-align: center;
+  padding: 2px;
+  width: 100%;
+  padding: 0px 25px;
+  background-color: #19a6ed;
+}
+
+.Included-Navbar .Welcome-Msg {
+  font-size: 0.9rem;
+  padding: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+.Included-Navbar .Clickhere {
+  color: #ddee1dff;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.Navbar-Section {
+  width: 100%;
+  padding: 0px 25px;
+}
+
+.Navbar-Section .Logo {
+  width: 52%;
+}
+
+.Navbar-Section .logo-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #19a6ed;
+}
+
+.Navbar-Section .loge-msg {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #f39001;
+}
+
+.Navbar-Section .List {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.Navbar-Section .List .Manu {
+  position: relative;
+  color:#19a6ed;
+  padding: 8px 14px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.Navbar-Section .List .Manu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  border-radius: 6px;
+}
+
+.Navbar-Section .List .Manu:hover{
+  color: #f76043;
+}
+
+.Navbar-Section .List .active-link {
+  color: #f76043;       
+  font-weight: 600;       
+  border-bottom: 2px solid #f76043; 
+}
+.nav-link.active {
+  color: #0d6efd; /* Bootstrap primary */
+  font-weight: 600;
+  border-bottom: 2px solid #0d6efd;
+}
+.Navbar-Section .Nav-Button {
+  position: relative;
+  padding: 8px 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 50px;
+  color: #19a6ed;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* Continuous Animated Gradient Border */
+.Navbar-Section .Nav-Button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #ff0000, #00ff62, #6A00FF, #ff0000
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 4s linear infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Optional subtle glow */
+.Navbar-Section .Nav-Button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 12px rgba(25, 166, 237, 0.4);
+  z-index: -2;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Gradient flow animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Soft glow breathing animation */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(25,166,237,0.3); }
+  50% { box-shadow: 0 0 20px rgba(0,224,255,0.6); }
+}
+
+
+/* Career Modal section Start here */
+
+.form-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #00d0ff, #e85186, #2004f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.career-form{
+  padding: 15px;
+}
+
+/* Form Styling */
+.career-form input,
+.career-form select {
+  width: 48%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #f9f9fb;
+  transition: all 0.3s ease;
+}
+
+.career-form input:focus,
+.career-form select:focus {
+  border-color: #19a6ed;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(25, 166, 237, 0.3);
+  outline: none;
+}
+
+/* Row Fields (State + City) */
+.row-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row-fields input {
+  width: 50%;
+}
+
+.row-fields select {
+  width: 50%;
+}
+
+/* Submit Button */
+.Modal-Button {
+  background: linear-gradient(90deg, #19a6ed, #0078d7);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 45px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(25, 166, 237, 0.4);
+  letter-spacing: 1px;
+}
+
+.Modal-Button:hover {
+  background: linear-gradient(90deg, #0078d7, #19a6ed);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 166, 237, 0.5);
+}
+
+/* Center Button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-close:hover {
+  color: #ff0000;
+}
+
+.Mob-Icon {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Mob-Icon:hover {
+  transform: scale(1.1);
+}
+
+.Mobile-Menu {
+  background-color: #19a6ed;
+  border-radius: 8px;
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* 🔹 Dropdown container */
+.custom-dropdown {
+  position: relative;
+}
+
+/* 🔹 Dropdown menu */
+.custom-dropdown .dropdown-menu {
+  background: rgba(27, 94, 139, 0.9);
+  border: none;
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 10px 0;
+  min-width: 230px;
+  opacity: 0;
+  transform: translateY(15px) scale(0.98);
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+/* 🔹 Smooth show effect on hover */
+.custom-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+}
+
+/* 🔹 Dropdown item */
+.custom-dropdown .dropdown-item {
+  color: #ffffff;
+  padding: 12px 22px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 🔹 Hover effect — gradient + lift */
+.custom-dropdown .dropdown-item:hover {
+  background: linear-gradient(90deg, #ffb703, #f28d3f);
+  color: #0b3c59;
+  border-radius: 8px;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(242, 141, 63, 0.4);
+   color: #ffffff;
+}
+
+/* 🔹 Optional animated fade-in */
+.animated-dropdown {
+  animation: dropdownFade 0.4s ease forwards;
+}
+
+@keyframes dropdownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 🔹 Little glowing border on hover */
+.custom-dropdown .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, #ffb703, #f28d3f);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.custom-dropdown:hover .dropdown-menu::before {
+  opacity: 1;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 576px) {
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .Mob-Icon {
+    font-size: 2.2rem;
+  }
+
+  .Included-Navbar .Welcome-Msg {
+    font-size: 0.8rem;
+  }
+  .Navbar-Section .loge-msg {
+    display: none;
+  }
+  /* Dropdown section */
+   .Career-Modal {
+    padding: 25px 20px;
+  }
+
+  .row-fields {
+    flex-direction: column;
+  }
+
+  .row-fields input,
+  .row-fields select {
+    width: 100%;
+  }
+  /* modal section */
+  .career-form input,
+.career-form select {
+  width: 100%;
+}
+}

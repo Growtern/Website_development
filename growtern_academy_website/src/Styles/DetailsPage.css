@@ -1,0 +1,770 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === AI Themed Animated Background start here === */
+.Detailspage-section {
+  width: 100%;
+  padding: 50px 25px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #04abff 0%, #0a0a0a 100%);
+  color: white;
+  z-index: 1;
+}
+
+/* Layered glowing particles */
+.Detailspage-section::before,
+.Detailspage-section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1.5px, transparent 2px),
+    radial-gradient(circle, rgba(255, 221, 0, 0.8) 1.5px, transparent 2px),
+    radial-gradient(circle, rgba(255, 72, 0, 0.8) 1.5px, transparent 2px);
+  background-size: 80px 80px, 100px 100px, 140px 140px;
+  animation: galaxyFlow 40s linear infinite;
+  z-index: 0;
+  opacity: 0.5;
+  filter: blur(0.3px);
+}
+
+/* Second layer for parallax depth */
+.Detailspage-section::after {
+  animation: galaxyFlowReverse 70s linear infinite;
+  opacity: 0.3;
+  transform: scale(1.2);
+  mix-blend-mode: screen;
+}
+
+/* Advanced multidirectional drift + rotation + scaling */
+@keyframes galaxyFlow {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+
+  25% {
+    transform: translate(-150px, -100px) rotate(45deg) scale(1.1);
+  }
+
+  50% {
+    transform: translate(-300px, -200px) rotate(90deg) scale(1.05);
+  }
+
+  75% {
+    transform: translate(-150px, -300px) rotate(135deg) scale(1.15);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(180deg) scale(1);
+  }
+}
+
+@keyframes galaxyFlowReverse {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1.1);
+  }
+
+  25% {
+    transform: translate(150px, 150px) rotate(-45deg) scale(1.05);
+  }
+
+  50% {
+    transform: translate(300px, 200px) rotate(-90deg) scale(1.2);
+  }
+
+  75% {
+    transform: translate(150px, 300px) rotate(-135deg) scale(1.05);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(-180deg) scale(1.1);
+  }
+}
+
+/* Add glowing pulse for subtle shimmer */
+.Detailspage-section::before,
+.Detailspage-section::after {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.Detailspage-section>* {
+  position: relative;
+  z-index: 2;
+}
+
+/* === AI Themed Animated Background end here === */
+
+/* 100% Placement Grarent start here */
+.Detailspage-Tag {
+  background: linear-gradient(270deg, #00DBDE, #FC00FF, #00DBDE);
+  background-size: 400% 400%;
+  animation: auroraMove 6s ease infinite;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 10px;
+}
+
+.Detailspage-Tag .Tag-msg {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* 100% Placement Grarent end here */
+
+
+/*Right side  SLIDER SECTION start here*/
+.highlight-slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 220px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.highlight-slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background: rgba(67, 55, 55, 0.491);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.6s ease;
+  backdrop-filter: blur(6px);
+}
+
+.highlight-slide.active {
+  left: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ICON */
+.highlight-slide span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #04abff, #8b5cf6);
+  border-radius: 50%;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+
+}
+
+/* TEXT */
+.highlight-slide h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.highlight-slide p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/*Right side  SLIDER SECTION end here*/
+/* duration and batch size tag start here */
+.batch-card {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.292);
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 30px 0px;
+
+}
+
+.batch-label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.batch-value {
+  color: #ebff34;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.divider {
+  width: 1px;
+  background-color: #e0e0e0;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.stat-text {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212529;
+}
+
+/* duration and batch size tag end here */
+/* Button section start here*/
+.Enroll-Btn {
+  position: relative;
+  width: 20px;
+  background: linear-gradient(90deg, #f4a30d, #eca014);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.Download-btn {
+  position: relative;
+  width: 20px;
+  background: linear-gradient(90deg, #141e30, #243b55);
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Animated Shine */
+.Enroll-btn::before,
+.Download-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shineSweep 3s infinite;
+}
+
+@keyframes shineSweep {
+  0% {
+    left: -75%;
+  }
+
+  100% {
+    left: 125%;
+  }
+}
+
+.Enroll-btn:hover,
+.Download-btn:hover {
+  background: #00ffff22;
+  color: white;
+}
+
+/* Button section end here*/
+/*Status Bar Section  */
+.KeyHighlight-section {
+  width: 100%;
+  padding: 50px 25px;
+  background: #ffffff;
+}
+
+.KeyHighlight-section .status-MainDeiv {
+  margin-top: -100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+}
+
+/* ====== Grid ====== */
+.KeyHighlight-section .status-MainDeiv .stats-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.stat-item {
+  flex: 0 0 calc(100% / 6);
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  z-index: 2;
+}
+
+/* ====== Text ====== */
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #d32f2f;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Key Featires Section start here */
+/* ====== Desktop Grid Layout ====== */
+.features-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* ====== Each Card ====== */
+.feature-card {
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Key Featires Section start here */
+
+/* Doubt Clearing Section start here */
+.Doubtclearing-Section {
+  width: 100%;
+  padding: 50px 25px;
+  background: #1572b6;
+}
+
+.Doubt-MainDiv {
+  background: radial-gradient(circle at top left, #0c1322, #02050b);
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+/* --- Text Styles --- */
+.highlight {
+  color: #ff8b00;
+}
+
+.Doubt-MainDiv h1,
+.Doubt-MainDiv h2 {
+  line-height: 1.3;
+}
+
+.underline {
+  width: 120px;
+  height: 3px;
+  background-color: #ffcc00;
+  margin-top: 8px;
+}
+
+/* --- Images --- */
+.student-img {
+  max-width: 350px;
+  z-index: 2;
+}
+
+.mentor-img {
+  width: 80px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+/* --- Background Shape (optional) --- */
+.Doubt-MainDiv::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .Doubt-MainDiv {
+    text-align: center;
+  }
+
+  .student-img {
+    max-width: 250px;
+  }
+
+  .mentor-img {
+    width: 60px;
+    top: 10px;
+  }
+
+  .underline {
+    margin: 10px auto;
+  }
+}
+
+/* Doubt Clearing Section End here */
+/* Price Comparision section Start here here */
+/* ====== Section Wrapper ====== */
+.comparison-section {
+  background: #0571a7;
+  padding: 50px 25px;
+  color: #fff;
+}
+
+.comparison-section .training-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f6ad4f;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.comparison-section .training-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #f6ad4f, #ffeb99, #f6ad4f);
+  animation: underlineSweep 3s linear infinite;
+}
+
+@keyframes underlineSweep {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+/* ====== Program Card ====== */
+.program-card {
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  /* overflow: hidden; */
+  backdrop-filter: blur(6px);
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.program-table {
+  width: 100%;
+  font-size: 0.95rem;
+  overflow: hidden;
+}
+
+.program-table tr:nth-child(even) {
+  background-color: rgba(153, 26, 26, 0.05); /*changed color form (255, 255, 255, 0.05) to (153, 26, 26, 0.05)*/
+}
+
+.program-table tr:hover {
+  background-color: rgba(99, 102, 241, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.program-table td {
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  vertical-align: top;
+  text-align: left;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.program-table td.feature {
+  font-weight: 600;
+  color: #c7d2fe;
+  width: 40%;
+}
+
+/* ====== Growtern (Left Table) ====== */
+/* .program-card:first-child {
+  background: linear-gradient(to bottom right, #312e81, #1e1b4b);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+} */
+
+/* ====== Other Institutes (Right Table) ====== */
+.program-card:last-child {
+  background: linear-gradient(to bottom left, #ffffff, #ffffff);
+  border: 1px solid rgba(255, 0, 76, 0.934);
+}
+/* Most Affortable tag */
+.Most-Tag-Div {
+    background: linear-gradient(270deg, #6bde00, #ffd500, #de3800);
+    background-size: 400% 400%;
+    animation: auroraMove 6s ease infinite;
+    width: 30%;
+    padding: 5px 10px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: absolute;
+    border-radius: 10px 0px 10px 0px;
+    z-index: 4;
+}
+/* Price Comparision section Start End here */
+/* Still Have Doubt section start here */
+.faq-section {
+  width: 100%;
+  padding: 50px 25px;
+  background-color: #f9fbff;
+}
+
+.faq-title {
+  font-size: 2rem;
+  color: #1b1c57;
+}
+
+.faq-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.accordion-button {
+  background-color: #f3f6fc;
+  border-radius: 0.5rem;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7f0ff;
+  color: #0d6efd;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.5rem;
+  }
+
+  .faq-subtitle {
+    font-size: 1rem;
+  }
+}
+
+
+/* Still Have Doubt section End here */
+
+/*  */
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+  /* 100% Tag */
+  .Detailspage-Tag {
+    width: fit-content;
+  }
+
+  /*  */
+  /* .tech-flow {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tech-flow .tech-icon:not(:last-child)::after {
+    content: "↓";
+    right: 50%;
+    top: auto;
+    bottom: -30px;
+    transform: translateX(50%);
+  } */
+
+  /*  */
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  /*  */
+  .divider {
+    display: none;
+  }
+
+  .batch-card {
+    text-align: center;
+  }
+
+  /*  */
+
+  /* change this from 1.9 to 1.4 cuz it was breaking on mobile */
+  .comparison-section .training-heading {
+    font-size: 1.4rem;
+
+  }
+
+  .batch-card {
+    width: 100%;
+  }
+
+  .batch-label {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .batch-value {
+    color: #ebff34;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  /* button section */
+  .in-mobile {
+    width: 100% !important;
+  }
+
+  /* MERN */
+  .tech-flow {
+    flex-direction: row;
+  }
+
+  .tech-flow .tech-icon:not(:last-child)::after {
+    content: "➜";
+    top: 15px;
+    left: 75px;
+    font-weight: 700;
+  }
+
+  .hero-section {
+
+    padding: 0px;
+  }
+
+  /* status bar */
+  .stats-section {
+    display: none;
+  }
+
+  .stats-section {
+    display: none;
+  }
+  /* Key features section */
+   .features-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .feature-card {
+    flex: 0 0 85%;
+    /* Show one card per view */
+    scroll-snap-align: center;
+    min-width: 250px;
+    border-radius: 1rem;
+    transition: none;
+  }
+
+  .features-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for clean look */
+  }
+
+  .feature-card:hover {
+    transform: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Price Comparision section Start here here */
+  .comparison-section {
+    padding: 50px 25px;
+  }
+
+  .program-card {
+    margin-bottom: 25px;
+  }
+
+  .program-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .program-card h4 {
+    font-size: 1.3rem;
+  }
+  .Most-Tag-Div {
+    background: linear-gradient(270deg, #6bde00, #ffd500, #de3800);
+    background-size: 400% 400%;
+    animation: auroraMove 6s ease infinite;
+    width: 50%;
+    padding: 3px 10px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: absolute;
+    z-index: 4;
+}
+
+}
+
