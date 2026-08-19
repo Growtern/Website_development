@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import MenuContent from "./MenuContent";
-import { logout } from "../../redux/slices/authSlice";
+import { logout } from "../../Redux/slices/authSlice"
 import { logoutAdmin } from "../../auth/services/auth.service";
 
 function SideMenu({ open, toggleDrawer }) {
