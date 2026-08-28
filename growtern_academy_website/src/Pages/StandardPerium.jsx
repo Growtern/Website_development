@@ -133,13 +133,13 @@ const StandardPerium = ({ plans, onClick }) => {
                 <div className="sp-price-row">
 
                   <span className="sp-price">
-                    {course.price}
+                    ₹{course.price}
                   </span>
 
                   {course.originalPrice && (
                     <span className="sp-original-price">
                       <del>
-                        {course.originalPrice}
+                        ₹{course.originalPrice}
                       </del>
                     </span>
                   )}

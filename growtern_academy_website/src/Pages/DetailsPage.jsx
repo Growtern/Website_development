@@ -395,10 +395,10 @@ const flowChartMap = {
   "pgpp-in-java-full-stack-development-with-gen-ai": (
     <JavaTechFlow />
   ),
-  "pgpp-in-data-science-analytics-with-gen-ai": (
+  "pgpp-in-data-science-and-analytics-with-gen-ai": (
     <DataScienceTechFlow />
   ),
-  "pgpp-in-artificial-intelligence-machine-learning": (
+  "pgpp-in-artificial-intelligence-and-machine-learning": (
     <AiMlFlowChat />
   ),
 };
@@ -906,7 +906,7 @@ const premiumPlan = course?.plans?.find(
                         "0 0 10px #000000ff, 0 0 20px #000000ff, 0 0 30px #000000ff",
                     }}
                   >
-                    {standardPlan?.price}{" "}
+                    ₹{standardPlan?.price}{" "}
 
                     <span
                       style={{
@@ -916,7 +916,7 @@ const premiumPlan = course?.plans?.find(
                       }}
                     >
                       <del>
-                        {standardPlan?.originalPrice}
+                        ₹{standardPlan?.originalPrice}
                       </del>
                     </span>
 
