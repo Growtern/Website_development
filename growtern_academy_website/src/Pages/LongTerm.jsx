@@ -10,6 +10,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Marquee from "react-fast-marquee";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import AdditionalTechKnowledge from '../components/AdditionalTechKnowledge';
 
 import "../Styles/LongTerm.css"
 
@@ -483,6 +484,9 @@ const LongTerm = () => {
 
       {/* Course Flowchat Section Start here */}
       <Courseflow />
+
+      {/* additional kn sec */}
+      <AdditionalTechKnowledge/>
 
 
       {/* Online Section Start here */}
