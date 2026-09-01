@@ -10,7 +10,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Marquee from "react-fast-marquee";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import AdditionalTechKnowledge from '../components/AdditionalTechKnowledge';
+import AdditionalSkillsBanner from '../components/AdditionalSkillsBanner';
 
 import "../Styles/LongTerm.css"
 
@@ -486,7 +486,7 @@ const LongTerm = () => {
       <Courseflow />
 
       {/* additional kn sec */}
-      <AdditionalTechKnowledge/>
+      <AdditionalSkillsBanner/>
 
 
       {/* Online Section Start here */}

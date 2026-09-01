@@ -121,7 +121,7 @@ const Footer = () => {
         </div>
       </section>
       <div className='Copyright'>
-        <p className='mb-0 copyright-message'>© 2025 Growtern. All Rights Reserved.</p>
+        <p className='mb-0 copyright-message'>© 2026 Growtern. All Rights Reserved.</p>
       </div>
     </div>
   )

@@ -31,6 +31,7 @@ import { useState } from 'react'
 import CustomModal from '../ui/Modal'
 import ApplyNowModal from '../components/Modals/ApplyNowModal'
 import Collaboration from '../components/Internship_Components/collaboration-section.jsx'
+import AdditionalSkillsBanner from "../components/AdditionalSkillsBanner.jsx"
 
 // import the TypeAnimation package
 import { TypeAnimation } from "react-type-animation";
@@ -295,12 +296,16 @@ const Hero = () => {
         </div>
       </section>
 
-       {/* refer and earn */}
-      <ReferEarn/>
+      {/* additional skills */}
+      <AdditionalSkillsBanner/>
+
 
       {/* Job Guaranteed seaction */}
       <JobGuarantee />
 
+       {/* refer and earn */}
+      <ReferEarn/>
+      
       {/* Collaborations */}
       <Collaboration/>
 

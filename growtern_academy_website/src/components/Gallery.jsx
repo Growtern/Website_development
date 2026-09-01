@@ -3,27 +3,21 @@ import "../Styles/Gallery.css";
 
 // Import images
 import image1 from "../assets/Images/Online.jpg";
-import image2 from "../assets/Images/Online_classes_gallery6.jpg";
 import image3 from "../assets/Images/Online_classes_gallery2.jpg";
 import image4 from "../assets/Images/Online_slasses_gallery4.jpg";
-import image5 from "../assets/Images/Online_classes_gallery3.jpg";
 import image6 from "../assets/Images/Online_classes_Gallery5.jpg";
-import image7 from "../assets/Images/Online_classes_galler6.jpeg";
-import image8 from "../assets/Images/Online_classes_galler7.jpeg";
+import image8 from "../assets/Images/live_training_ses.jpeg"
 import image9 from "../assets/Images/Online_classes_galler8.jpeg";
 import image10 from "../assets/Images/Online_classes_galler9.jpeg";
-import image11 from "../assets/Images/Online_classes_galler10.jpeg";
 import image12 from "../assets/Images/Online_classes_galler11.jpeg";
+
 
 const images = [
     { src: image1, title: "Class in Zoom Meet" },
-    { src: image2, title: "Project classes" },
     { src: image3, title: "Training Time" },
     { src: image4, title: "Class Time" },
-    { src: image5, title: "One to One Session" },
     { src: image6, title: "Intenship" },
-    { src: image7, title: "Intenship" },
-    { src: image8, title: "Intenship" },
+    { src: image8, title: "Live One to One" },
     { src: image9, title: "Intenship" },
     { src: image10, title: "Intenship" },
     { src: image12, title: "Intenship" },
