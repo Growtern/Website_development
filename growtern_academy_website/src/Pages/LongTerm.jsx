@@ -487,9 +487,6 @@ const LongTerm = () => {
       {/* <Courseflow /> */}
       <DottedCourseFlow/>
 
-      {/* additional kn sec */}
-      <AdditionalSkillsBanner/>
-
 
       {/* Online Section Start here */}
       <OnlineTraining />
@@ -841,6 +838,9 @@ const LongTerm = () => {
         </div>
 
       </section>
+
+      {/* additional kn sec */}
+      <AdditionalSkillsBanner/>
 
 
       {/* Mentor Community Section */}
