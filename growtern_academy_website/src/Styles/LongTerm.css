@@ -282,7 +282,7 @@
 .Key-Features .keyCard .Key-icon {
     font-size: 3rem;
     text-align: center;
-    animation: pop 1.5s infinite;
+    /* animation: pop 1.5s infinite; */
     margin-top: 10px;
 }
 

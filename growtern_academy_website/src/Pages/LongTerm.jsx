@@ -13,6 +13,7 @@ import { toast } from "react-toastify";
 import AdditionalSkillsBanner from '../components/AdditionalSkillsBanner';
 
 import "../Styles/LongTerm.css"
+import DottedCourseFlow from "../components/DottedCourseFlow";
 
 // Import Job leading image
 import whuimage from "../assets/Images/Why Chose Us_image.png"
@@ -483,7 +484,8 @@ const LongTerm = () => {
 
 
       {/* Course Flowchat Section Start here */}
-      <Courseflow />
+      {/* <Courseflow /> */}
+      <DottedCourseFlow/>
 
       {/* additional kn sec */}
       <AdditionalSkillsBanner/>
