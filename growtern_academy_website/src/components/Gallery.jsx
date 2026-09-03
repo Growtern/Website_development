@@ -6,10 +6,10 @@ import image1 from "../assets/Images/Online.jpg";
 import image3 from "../assets/Images/Online_classes_gallery2.jpg";
 import image4 from "../assets/Images/Online_slasses_gallery4.jpg";
 import image6 from "../assets/Images/Online_classes_Gallery5.jpg";
-import image8 from "../assets/Images/live_training_ses.jpeg"
+import image8 from "../assets/Images/LiveOneToOne.jpeg"
 import image9 from "../assets/Images/Online_classes_galler8.jpeg";
 import image10 from "../assets/Images/Online_classes_galler9.jpeg";
-import image12 from "../assets/Images/Online_classes_galler11.jpeg";
+import image12 from "../assets/Images/std_suc.jpeg";
 
 
 const images = [
@@ -18,10 +18,11 @@ const images = [
     { src: image4, title: "Class Time" },
     { src: image6, title: "Intenship" },
     { src: image8, title: "Live One to One" },
-    { src: image9, title: "Intenship" },
-    { src: image10, title: "Intenship" },
+    { src: image9, title: "Java Full Stack Class" },
+    { src: image10, title: "Python Full Stack Class" },
     { src: image12, title: "Intenship" },
   ];
+
 
 const Gallery = () => {
   
