@@ -77,7 +77,7 @@ const ShortTerm = () => {
       <section className="benefits-section  py-5 ">
         <div className="container">
           <div className="text-center mb-4">
-            <h4 className="Internship-Benefit-title  "><span style={{ color: "rgb(239, 116, 15)" }}>Benefits</span> for Our Internship</h4>
+            <h4 className="Internship-Benefit-title  "><span style={{ color: "rgb(239, 116, 15)" }}>Benefits</span> of Our Internship</h4>
             <p className="section-text text-white">
               Get the right guidance, clean code, and strategies to boost your skills
               and achieve success in your journey.
