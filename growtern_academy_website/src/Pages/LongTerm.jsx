@@ -11,6 +11,7 @@ import Marquee from "react-fast-marquee";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import AdditionalSkillsBanner from '../components/AdditionalSkillsBanner';
+import KeyFeatures from '../components/KeyFeatures';
 
 import "../Styles/LongTerm.css"
 import DottedCourseFlow from "../components/DottedCourseFlow";
@@ -493,59 +494,7 @@ const LongTerm = () => {
 
 
       {/* Key Features sections start here */}
-      <section className='Key-Features'>
-
-        <div className='container'>
-
-          <h2 className='KeyFeatures-H'>
-
-            Features for
-
-            <span
-              style={{
-                color: "#fb9200ff"
-              }}
-            >
-              Career Success
-            </span>
-
-          </h2>
-
-
-          <div className='row g-4'>
-
-            {Cards.map((Cards) => (
-
-              <div
-                className="col-md-4 p-0 p-sm-3"
-                key={Cards.id}
-              >
-
-                <div className='keyCard'>
-
-                  <h2 className='Key-icon'>
-                    {Cards.Logo}
-                  </h2>
-
-                  <h5 className='text-center fw-bold'>
-                    {Cards.Name}
-                  </h5>
-
-                  <p className='Card-message px-2 m-0 pb-0'>
-                    {Cards.Message}
-                  </p>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
+      <KeyFeatures/>
 
 
       {/* Placement Student Section */}
