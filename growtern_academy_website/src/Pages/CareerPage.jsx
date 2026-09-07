@@ -6,6 +6,9 @@ import team_collab from "../assets/Images/team_collab.jpeg"
 import live_training_ses from "../assets/Images/live_training_ses.jpeg"
 import std_suc from "../assets/Images/std_suc.jpeg"
 import car_hero from "../assets/Images/car-hero.jpeg"
+import career_img_1 from "../assets/Images/career_img_1.jpeg";
+import career_img_2 from "../assets/Images/career_img_2.jpeg";
+import career_img_3 from "../assets/Images/career_img_3.png";
 
 /* ─────────────────────────────────────────
    GOOGLE APPS SCRIPT URL
@@ -138,15 +141,15 @@ const GALLERY = [
     label: "Student Success",
   },
   {
-    src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    src: career_img_1,
     label: "Workshops & Events",
   },
   {
-    src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80",
+    src: career_img_2,
     label: "Mentorship Culture",
   },
   {
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80",
+    src: career_img_3,
     label: "Team Celebrations",
   },
 ];
