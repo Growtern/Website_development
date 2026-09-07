@@ -3,6 +3,8 @@ import React, { useState } from "react";
 // Images
 import StartupCertificate from "../../assets/Images/Certificate of Recognition.png";
 import IncorporationCertificate from "../../assets/Images/MCA Govt.of India.png";
+import startupOdisha from "../../assets/Certificates/stp-odisha.jpg";
+import udm_certificate from "../../assets/Certificates/udm-certificate.jpg";
 
 // MUI
 import Dialog from "@mui/material/Dialog";
@@ -21,6 +23,16 @@ const LegalIdentity = () => {
         {
             title: "Certificate of Incorporation",
             image: IncorporationCertificate,
+            buttonColor: "#F39001",
+        },
+        {
+            title: "Startup Odisha Recognition",
+            image: startupOdisha,
+            buttonColor: "#009FE3",
+        },
+        {
+            title: "Udyam Registration Certificate",
+            image: udm_certificate,
             buttonColor: "#F39001",
         },
     ];
